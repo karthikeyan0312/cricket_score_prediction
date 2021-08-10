@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 @st.cache
 def load_data():
-    df=pd.read_excel(r"/ipl.csv")
+    df=pd.read_excel(r"/app/cricket_score_prediction/ipl.csv")
     return df
 dataset = load_data()
 X = dataset.iloc[:,[7,8,9,12,13]].values #Input features
