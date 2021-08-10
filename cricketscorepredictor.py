@@ -22,7 +22,7 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 from sklearn.ensemble import RandomForestRegressor
-model = RandomForestRegressor(n_estimators=1000,max_features=None,random_state=12)
+model = RandomForestRegressor(n_estimators=100,max_features=None,random_state=12)
 model.fit(X_train,y_train)
 
 
